@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudentList</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>學生資料表</h1>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Major</th>
+        <th>Scholarship merit</th>
+        <th>Scholarship other</th>
+      </tr>
+
+      <% foundStudent.forEach((element)=>{ %>
+      <tr>
+        <td><%= element._id%></td>
+        <td><%= element.name%></td>
+        <td><%= element.age%></td>
+        <td><%= element.major%></td>
+        <td><%= element.scholarship.merit%></td>
+        <td><%= element.scholarship.other%></td>
+        <td><a href="/student/<%= element._id%>">編輯</a></td>
+        <%})%>
+      </tr>
+    </table>
+
+    <!-- <% %> <% %> <% %> -->
+  </body>
+</html>
