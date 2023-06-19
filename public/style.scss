@@ -15,3 +15,25 @@ th {
   color: white;
   text-align: center;
 }
+a {
+  background-color: gray;
+  padding: 2px 5px;
+  border-radius: 3px;
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
+}
+#query {
+  margin-top: 10px;
+}
+#create {
+  a {
+    padding: 2px 30px;
+    position: relative;
+
+    top: 10px;
+  }
+}
+div button {
+  margin-top: 10px;
+}

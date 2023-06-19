@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- 接收foundStudent物件 -->
+    <form action="/student/<%=foundStudent._id %>?_method=PUT" method="post">
+      <label for="name">name</label>
+      <input
+        type="text"
+        value="<%= foundStudent.name%>"
+        name="name"
+        id="name"
+      />
+      <label for="age">age</label>
+      <input type="number" value="<%= foundStudent.age%>" name="age" id="age" />
+      <label for="major">major</label>
+      <input
+        type="text"
+        value="<%= foundStudent.major%>"
+        name="major"
+        id="major"
+      />
+      <label for="merit">merit</label>
+      <input
+        type="number"
+        value="<%=foundStudent.scholarship.merit %>"
+        name="merit"
+        id="merit"
+      />
+      <label for="other">other</label>
+      <input
+        type="number"
+        value="<%=foundStudent.scholarship.other %>"
+        name="other"
+        id="other"
+      />
+      <button>更新資料</button>
+    </form>
+  </body>
+</html>

@@ -16,6 +16,7 @@
         <th>Major</th>
         <th>Scholarship merit</th>
         <th>Scholarship other</th>
+        <th colspan="2">功能</th>
       </tr>
 
       <% foundStudent.forEach((element)=>{ %>
@@ -26,11 +27,18 @@
         <td><%= element.major%></td>
         <td><%= element.scholarship.merit%></td>
         <td><%= element.scholarship.other%></td>
-        <td><a href="/student/<%= element._id%>">編輯</a></td>
+        <td><a href="/student/<%= element._id%>/edit">編輯</a></td>
+        <td><a href="/student/delete/<%=element._id%>">刪除</a></td>
         <%})%>
       </tr>
     </table>
-
-    <!-- <% %> <% %> <% %> -->
+    <form action="student/search" method="get">
+      <div id="query">
+        <label for="query">搜尋學生：</label>
+        <input type="text" id="query" name="student" />
+        <button>查詢</button>
+      </div>
+    </form>
+    <a href="student/createData">新增學生資料</a>
   </body>
 </html>

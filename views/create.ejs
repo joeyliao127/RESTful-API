@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- 實作POST方法 -->
+    <div id="create">
+      <h2>新增學生資料</h2>
+      <form action="createData-submit" method="POST">
+        <div>
+          <label for="name">姓名：</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div>
+          <label for="age">年齡：</label>
+          <input type="number" name="age" id="age" />
+        </div>
+        <div>
+          <label for="major">專業：</label>
+          <input type="text" name="major" id="major" />
+        </div>
+        <div>
+          <label for="merit">獎金：</label>
+          <input type="number" name="merit" id="merit" />
+        </div>
+        <div>
+          <label for="other">其他：</label>
+          <input type="number" name="other" id="other" />
+        </div>
+        <button>新增資料</button>
+      </form>
+    </div>
+  </body>
+</html>
