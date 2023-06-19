@@ -1,0 +1,39 @@
+[
+  {
+    _id: ObjectId("648a628cfe2ea495a086c501"),
+    name: 'Joey',
+    age: 25,
+    major: 'Computer Science',
+    scholarship: { merit: 1000, other: 500 }
+  },
+  {
+    _id: ObjectId("648a62cdfe2ea495a086c502"),
+    name: 'Paul',
+    age: 24,
+    major: 'Computer Science',
+    scholarship: { merit: 1000, other: 500 }
+  },
+  {
+    _id: ObjectId("648a6314fe2ea495a086c504"),
+    name: 'Andy',
+    age: 23,
+    major: 'Chemical',
+    scholarship: { merit: 1000, other: 500 }
+  },
+  {
+    _id: ObjectId("648a7bf9848c58084f0f1c5f"),
+    name: 'Tracy',
+    age: 25,
+    major: 'Math',
+    scholarship: { merit: 1000, other: 1000 },
+    __v: 0
+  },
+  {
+    _id: ObjectId("6490050bb08a601ed46c446d"),
+    name: 'Mandy',
+    age: 11,
+    major: '美妝',
+    scholarship: { merit: 111, other: 111 },
+    __v: 0
+  }
+]
